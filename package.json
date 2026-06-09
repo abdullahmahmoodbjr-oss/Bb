@@ -1,0 +1,39 @@
+{
+  "name": "chatgpt-google-browser-mcp",
+  "version": "0.1.0",
+  "description": "A guarded MCP server that lets ChatGPT drive a supervised Playwright browser session for Google pages and forms.",
+  "type": "module",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "tsx src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "install:browsers": "playwright install chromium",
+    "chatgpt:url": "node scripts/print-chatgpt-url.mjs",
+    "mcp:url": "node scripts/print-chatgpt-url.mjs",
+    "doctor": "node scripts/print-chatgpt-url.mjs --doctor"
+  },
+  "keywords": [
+    "mcp",
+    "chatgpt",
+    "playwright",
+    "google",
+    "browser-automation"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.5",
+    "express": "^4.19.2",
+    "playwright": "^1.46.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.5.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.4"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
