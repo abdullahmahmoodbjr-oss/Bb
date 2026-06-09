@@ -14,6 +14,10 @@ https://abc123.ngrok-free.app/mcp
 
 Your URL will not be exactly `abc123`; ngrok gives you your own domain.
 
+## Before Step 1: Open a terminal in this project
+
+If you do not know how to open a terminal, follow [`OPEN_TERMINAL.md`](OPEN_TERMINAL.md) first. Then come back here.
+
 ## Step 1: Install Node.js
 
 Install **Node.js 20 or newer** from:

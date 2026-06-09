@@ -34,6 +34,8 @@ That HTTPS `/mcp` URL is the URL to paste into ChatGPT. If the ChatGPT form spec
 
 For the full beginner guide to get your URL, see [`GET_MCP_SERVER_URL.md`](GET_MCP_SERVER_URL.md). For click-by-click setup instructions matching ChatGPT's **New App** screen, see [`CHATGPT_SETUP.md`](CHATGPT_SETUP.md).
 
+If you do not know how to open a terminal in this folder, start with [`OPEN_TERMINAL.md`](OPEN_TERMINAL.md).
+
 ## Quick start
 
 ```bash

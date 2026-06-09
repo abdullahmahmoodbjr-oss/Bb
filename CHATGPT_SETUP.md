@@ -6,6 +6,8 @@ This guide matches the **New App** window in your screenshot.
 
 If you only want the full step-by-step URL process, start with [`GET_MCP_SERVER_URL.md`](GET_MCP_SERVER_URL.md). The final URL you need will look like `https://abc123.ngrok-free.app/mcp`.
 
+If you do not know how to open a terminal in this project folder, follow [`OPEN_TERMINAL.md`](OPEN_TERMINAL.md) first.
+
 ## 1. Start the MCP server
 
 Open a terminal in this repository and run:
