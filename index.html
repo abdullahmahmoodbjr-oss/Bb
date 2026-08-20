@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LuminaLearn | Glowing Education Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="aurora aurora-one"></div>
+    <div class="aurora aurora-two"></div>
+
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="logo" href="#hero" aria-label="LuminaLearn home">
+          <span class="logo-orb"></span>
+          LuminaLearn
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span class="sr-only">Toggle menu</span>
+          ☰
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#courses">Courses</a>
+          <a href="#planner">Planner</a>
+          <a href="#quiz">Quiz</a>
+          <a href="#resources">Resources</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Interactive learning that shines</p>
+          <h1>Build brilliant study habits with a glowing educational hub.</h1>
+          <p class="hero-text">
+            Explore focused courses, generate a daily study plan, test your knowledge, and keep momentum with beautiful progress tools.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#courses">Start learning</a>
+            <a class="button ghost" href="#planner">Create plan</a>
+          </div>
+          <div class="stats" aria-label="Learning platform highlights">
+            <div><strong>36</strong><span>Micro lessons</span></div>
+            <div><strong>12</strong><span>Skill paths</span></div>
+            <div><strong>24/7</strong><span>Self-paced</span></div>
+          </div>
+        </div>
+        <div class="hero-card" aria-label="Featured lesson dashboard">
+          <div class="card-topline"></div>
+          <h2>Today’s focus</h2>
+          <p>Master active recall in three short steps.</p>
+          <div class="progress-ring" aria-hidden="true"><span>78%</span></div>
+          <ul>
+            <li>Read the concept card</li>
+            <li>Answer without notes</li>
+            <li>Review mistakes quickly</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="courses">
+        <div class="section-heading">
+          <p class="eyebrow">Choose your path</p>
+          <h2>Glowing courses for core skills</h2>
+        </div>
+        <div class="course-grid" id="course-grid"></div>
+      </section>
+
+      <section class="section split" id="planner">
+        <div>
+          <p class="eyebrow">Smart study planner</p>
+          <h2>Generate a focused study session</h2>
+          <p class="muted">Pick a subject and available time. LuminaLearn creates a practical session with learning, practice, and reflection blocks.</p>
+        </div>
+        <form class="planner-card" id="planner-form">
+          <label>
+            Subject
+            <select id="subject">
+              <option>Mathematics</option>
+              <option>Science</option>
+              <option>Reading</option>
+              <option>History</option>
+              <option>Coding</option>
+            </select>
+          </label>
+          <label>
+            Minutes available
+            <input id="minutes" type="number" min="15" max="180" value="45" />
+          </label>
+          <button class="button primary" type="submit">Build my plan</button>
+          <div class="plan-output" id="plan-output" aria-live="polite"></div>
+        </form>
+      </section>
+
+      <section class="section" id="quiz">
+        <div class="quiz-panel">
+          <div>
+            <p class="eyebrow">Quick check</p>
+            <h2 id="quiz-question">Loading question…</h2>
+            <div class="answers" id="answers"></div>
+          </div>
+          <div class="score-box">
+            <span>Score</span>
+            <strong id="score">0</strong>
+            <button class="button ghost" id="next-question" type="button">Next question</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section resources" id="resources">
+        <div class="section-heading">
+          <p class="eyebrow">Resource library</p>
+          <h2>Study strategies that work</h2>
+        </div>
+        <div class="resource-list">
+          <article><h3>Spaced repetition</h3><p>Review ideas right before you forget them to make memories stronger.</p></article>
+          <article><h3>Active recall</h3><p>Close your notes and retrieve the answer from memory before checking.</p></article>
+          <article><h3>Interleaving</h3><p>Mix related problem types so your brain learns when to use each strategy.</p></article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 LuminaLearn. Keep curiosity glowing.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
